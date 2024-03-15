@@ -11,6 +11,6 @@ printf %s "listen 6042-webs
     mode http
     balance roundrobin
     server 6042-web-01 18.212.203.85:80 check
-    server 6042-web-02 3.84.225.21:80 5check
+    server 6042-web-02 3.84.225.21:80 check
 " >> /etc/haproxy/haproxy.cfg
 sudo service haproxy restart
