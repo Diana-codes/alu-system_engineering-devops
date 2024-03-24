@@ -1,4 +1,6 @@
-tart Apache
+#!/usr/bin/env bash
+
+# Start Apache
 sudo service apache2 start
 
 # Wait for Apache to start (you can adjust the sleep duration as needed)
@@ -18,4 +20,3 @@ if [[ "$output" == *"Hello Holberton"* ]]; then
 else
     echo "Error: Apache root does not return Hello Holberton"
 fi
-
