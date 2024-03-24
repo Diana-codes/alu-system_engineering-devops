@@ -2,8 +2,4 @@
 #Making debugging short and sweet
 sudo sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
 service nginx start
-kill "$(pgrep 'nginx' | head -1)"#!/usr/bin/env bash
-#Making debugging short and sweet
-sudo sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
-service nginx start
 kill "$(pgrep 'nginx' | head -1)"
