@@ -1,4 +1,5 @@
-unning nginx as nginx user
+#!/usr/bin/env bash
+#Running nginx as nginx user
 pkill -f apache2
 chmod 644 /etc/nginx/nginx.conf
 sed -i 's/80/8080 default_server/g' /etc/nginx/sites-available/default
